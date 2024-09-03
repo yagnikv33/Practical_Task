@@ -1,0 +1,46 @@
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search by name or email"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sort_by_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort by First Name"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sort_by_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort by Email"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/restore_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restore Default"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/user_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</layout>
+
